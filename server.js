@@ -15,15 +15,13 @@ app.get('/', function(req, res) {
   res.redirect('/students')
 })
 
-app.get('/students', function(req, res) {
-  res.render('students')
-})
 
 app.get('/students', function(req, res) {
   res.render('students', {
     students: students
   })
 })
+
 app.listen(3000, function() {
   console.log('Listening on port 3000')
 })

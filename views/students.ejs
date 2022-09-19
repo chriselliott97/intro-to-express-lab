@@ -8,5 +8,14 @@
 </head>
 <body>
   <h1>Students</h1>
+  <ul>
+    <% students.forEach(student => { %>
+      <li>
+				<%= student.text %> 
+				- 
+				<%= student.active ? 'Currently Active' : 'Terminated' %>
+			</li>
+    <% }) %>
+  </ul>
 </body>
 </html>
