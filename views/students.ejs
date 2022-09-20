@@ -12,7 +12,7 @@
   <ul>
     <% students.forEach(student => { %>
       <li>
-				<%= student.text %> 
+				<span id="names"> <%= student.text %> </span>
 				- 
 				<%= student.active ? 'Currently Active' : 'Terminated' %>
 			</li>
