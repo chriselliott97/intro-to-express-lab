@@ -8,7 +8,7 @@ const app = express()
 app.set('view engine', 'ejs')
 
 //  mount middleware (app.use)
-
+app.use(express.static('public'))
 
 //  mount routes 
 app.get('/', function(req, res) {
